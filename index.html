@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Оптовая заявка — BIO'L · Active · Roya</title>
+<title>BIO'L · Active · Roya — оптовая заявка для Бишкека</title>
+<meta name="description" content="Оптовый заказ уходовой косметики BIO'L и бытовой химии Active, Roya из Ирана. Каталог, корзина и отправка заявки в WhatsApp за пару минут." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2316231F'/%3E%3Ctext x='50' y='66' font-size='54' text-anchor='middle' fill='%23C98A2C' font-family='Georgia,serif'%3EБ%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <script>
 /**
  * @license React
@@ -304,11 +309,166 @@ var d=null!=c&&c.hydratedSources||null,e=!1,f="",g=aj;null!==c&&void 0!==c&&(!0=
 function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmountComponentAtNode=function(a){if(!Vd(a))throw Error(m(40));return a._reactRootContainer?(yb(function(){Wd(null,null,a,!1,function(){a._reactRootContainer=null;a[Ja]=null})}),!0):!1};Q.unstable_batchedUpdates=Tf;Q.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!Vd(c))throw Error(m(200));if(null==a||void 0===a._reactInternals)throw Error(m(38));return Wd(a,b,c,!1,d)};Q.version="18.3.1-next-f1338f8080-20240426"});
 })();
 </script>
+<style>
+:root{
+  --ink:#16231F;
+  --ink-soft:#1E2E28;
+  --paper:#F6EFE2;
+  --paper-soft:#FBF7EE;
+  --paper-line:#E4D9C2;
+  --saffron:#C98A2C;
+  --saffron-deep:#9C6A1E;
+  --sage:#4F7A5B;
+  --cobalt:#2B4C7E;
+  --text:#221F19;
+  --muted:#6E6656;
+  --font-display:'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+*{box-sizing:border-box;}
+html{-webkit-tap-highlight-color:transparent;}
+body{margin:0;background:var(--paper-soft);color:var(--text);font-family:var(--font-body);}
+input,textarea,button{font-family:inherit;}
+input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--saffron);outline-offset:2px;}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
+
+.page{min-height:100vh;padding-bottom:64px;}
+
+/* ---------- HERO ---------- */
+.hero{background:radial-gradient(120% 160% at 14% -10%, #24382F 0%, var(--ink) 46%, #101A16 100%);color:#F3EEE0;}
+.hero-inner{max-width:1180px;margin:0 auto;padding:52px 24px 34px;display:grid;grid-template-columns:1.3fr 0.9fr;gap:36px;align-items:center;}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron);margin-bottom:14px;}
+.hero-title{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4.6vw,48px);line-height:1.06;margin:0 0 16px;letter-spacing:-.01em;}
+.hero-title em{font-style:italic;font-weight:500;color:var(--saffron);}
+.hero-sub{font-size:15.5px;line-height:1.55;color:#CFC9B7;max-width:46ch;margin:0 0 22px;}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--font-mono);font-size:12px;padding:7px 12px;border:1px solid rgba(243,238,224,.22);border-radius:999px;color:#EDE7D6;}
+
+.hero-slip{background:var(--paper);color:var(--text);border-radius:6px;padding:20px 20px 18px;position:relative;box-shadow:0 24px 50px -22px rgba(0,0,0,.55);transform:rotate(1.2deg);}
+.hero-slip::before{content:"";position:absolute;top:-7px;left:16px;right:16px;height:14px;background-image:radial-gradient(circle at 6px 7px, var(--ink) 3.5px, transparent 3.6px);background-size:16px 14px;background-repeat:repeat-x;background-position:0 0;}
+.slip-title{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+.slip-row{display:flex;align-items:baseline;gap:6px;font-family:var(--font-mono);font-size:13px;padding:5px 0;}
+.slip-row>span:first-child{white-space:nowrap;overflow:hidden;}
+.slip-dots{flex:1;border-bottom:1px dotted #B9AD8E;margin-bottom:4px;}
+.slip-total{display:flex;justify-content:space-between;font-family:var(--font-mono);font-weight:700;font-size:14px;border-top:1px solid var(--paper-line);margin-top:8px;padding-top:8px;}
+.slip-stamp{position:absolute;bottom:14px;right:16px;width:56px;height:56px;border:2.5px solid var(--saffron-deep);border-radius:50%;color:var(--saffron-deep);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.05em;transform:rotate(-11deg);opacity:.75;}
+
+.hero-brands{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:12px;overflow:hidden;}
+.brand-strip{padding:16px 20px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.brand-strip--biol{background:linear-gradient(120deg,#3C6249,#2A4636);}
+.brand-strip--active{background:linear-gradient(120deg,#22406B,#182C4C);}
+.brand-mark{font-family:var(--font-display);font-weight:700;font-size:19px;color:#fff;}
+.brand-mark--italic{font-style:italic;font-weight:500;}
+.brand-desc{font-size:12.5px;color:rgba(255,255,255,.78);}
+
+.view-switch{max-width:1180px;margin:0 auto;padding:18px 24px 0;display:flex;gap:8px;}
+.view-btn{padding:9px 18px;border-radius:999px;border:1px solid rgba(243,238,224,.28);background:transparent;color:#E7E1D0;cursor:pointer;font-size:13.5px;}
+.view-btn--active{background:var(--saffron);border-color:var(--saffron);color:#1B1204;font-weight:700;}
+
+/* ---------- LAYOUT ---------- */
+.orders-wrap,.layout{max-width:1180px;margin:0 auto;padding:28px 24px 0;}
+.layout{display:grid;grid-template-columns:1fr 358px;gap:26px;align-items:start;}
+@media (max-width:880px){.layout{grid-template-columns:1fr;} .cart-panel{position:static !important;}}
+@media (max-width:640px){.hero-inner{grid-template-columns:1fr;} .hero-slip{transform:none;} .hero-brands{grid-template-columns:1fr;}}
+
+.search{width:100%;padding:13px 16px;border-radius:10px;border:1px solid var(--paper-line);font-size:15px;background:#fff;margin-bottom:16px;}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+.tab{padding:8px 15px;border-radius:999px;border:1px solid var(--paper-line);background:#fff;color:var(--muted);cursor:pointer;font-size:13.5px;}
+.tab--active{border-color:var(--cobalt);background:var(--cobalt);color:#fff;font-weight:600;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.product-card{background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--brand-color);border-radius:10px;padding:14px 15px;display:flex;flex-direction:column;gap:8px;transition:transform .15s ease, box-shadow .15s ease;}
+.product-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px -16px rgba(20,30,20,.35);}
+.card-top{display:flex;justify-content:space-between;align-items:center;}
+.brand-tag{color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:.02em;}
+.unit-tag{font-family:var(--font-mono);font-size:11.5px;color:var(--muted);}
+.card-name{font-size:14px;line-height:1.35;min-height:38px;font-weight:600;}
+.card-note{font-size:11.5px;color:var(--muted);font-style:italic;}
+.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:8px;border-top:1px dotted var(--paper-line);}
+.price{font-family:var(--font-mono);font-weight:700;font-size:14.5px;color:var(--ink-soft);}
+.stepper{display:flex;align-items:center;border:1px solid var(--paper-line);border-radius:8px;overflow:hidden;}
+.step-btn{width:28px;height:28px;border:none;background:var(--paper);cursor:pointer;font-size:15px;line-height:1;color:var(--ink-soft);}
+.step-btn:hover{background:var(--paper-line);}
+.step-input{width:38px;height:28px;border:none;border-left:1px solid var(--paper-line);border-right:1px solid var(--paper-line);text-align:center;font-family:var(--font-mono);font-size:13px;}
+.empty-state{grid-column:1/-1;padding:30px 0;text-align:center;color:var(--muted);}
+
+/* ---------- CART / SLIP PANEL ---------- */
+.cart-panel{position:sticky;top:16px;background:var(--paper);border:1px solid var(--paper-line);border-radius:14px;padding:20px;box-shadow:0 18px 40px -28px rgba(20,30,20,.45);}
+.slip-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;}
+.slip-header-title{font-family:var(--font-display);font-weight:700;font-size:19px;}
+.item-count{font-family:var(--font-mono);font-size:12px;color:var(--muted);}
+.cart-list{max-height:300px;overflow-y:auto;margin-bottom:10px;}
+.cart-empty{color:var(--muted);font-size:13.5px;padding:10px 0;}
+.cart-row{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dotted var(--paper-line);}
+.cart-row-name{font-size:13px;font-weight:600;}
+.cart-row-meta{font-size:11.5px;color:var(--muted);font-family:var(--font-mono);}
+.cart-row-sum{font-family:var(--font-mono);font-weight:700;font-size:13px;white-space:nowrap;}
+
+.progress-wrap{margin:14px 0;}
+.progress-label-row{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:6px;}
+.progress-fraction{font-family:var(--font-mono);font-weight:700;color:var(--text);}
+.progress-track{height:8px;border-radius:999px;background:#E9E0CB;overflow:hidden;}
+.progress-fill{height:100%;background:var(--saffron);transition:width .3s ease;}
+.progress-fill--done{background:var(--sage);}
+.progress-hint{font-size:12px;color:var(--saffron-deep);margin-top:6px;}
+
+.form-fields{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
+.field-label{font-size:11.5px;color:var(--muted);margin-top:8px;}
+.field-input,.field-textarea{padding:10px 12px;border-radius:8px;border:1px solid var(--paper-line);font-size:14px;background:#fff;resize:vertical;}
+.error-box{background:#FBE6E1;border:1px solid #E3A899;color:#8A3A28;font-size:12.5px;border-radius:8px;padding:10px 12px;margin-top:12px;line-height:1.5;}
+.total-row{display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 12px;border-top:1px solid var(--paper-line);padding-top:12px;}
+.total-sum{font-family:var(--font-mono);font-weight:700;font-size:20px;color:var(--ink-soft);}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:10px;padding:12px 16px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;border:1px solid transparent;}
+.btn-block{width:100%;margin-top:8px;}
+.btn-small{margin-top:8px;font-weight:600;font-size:12.5px;padding:8px 12px;}
+.btn-submit{background:var(--saffron);color:#1B1204;box-shadow:0 10px 22px -12px rgba(201,138,44,.65);}
+.btn-submit:hover{background:var(--saffron-deep);}
+.btn-whatsapp{background:#1F8F5B;color:#fff;}
+.btn-whatsapp:hover{background:#176B44;}
+.btn-outline{background:transparent;border-color:var(--paper-line);color:var(--text);}
+.btn-ghost{background:#fff;border-color:var(--paper-line);color:var(--muted);}
+.link-fallback{font-size:11.5px;color:var(--muted);margin-top:10px;line-height:1.5;}
+
+/* ---------- RECEIPT ---------- */
+.receipt{text-align:center;padding:8px 4px;}
+.receipt-check{width:52px;height:52px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 12px;}
+.receipt-title{font-family:var(--font-display);font-weight:700;font-size:20px;}
+.receipt-sub{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-top:2px;}
+.receipt-total{font-family:var(--font-mono);font-weight:700;font-size:26px;margin:10px 0;color:var(--ink-soft);}
+.receipt-divider{height:1px;background:var(--paper-line);margin:10px 0;}
+.receipt-note{font-size:12.5px;color:var(--muted);margin-bottom:12px;line-height:1.5;}
+
+/* ---------- ORDERS (admin) VIEW ---------- */
+.orders-note{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
+.orders-loading{padding:24px 0;color:var(--muted);}
+.order-card{background:#fff;border:1px solid var(--paper-line);border-radius:12px;padding:16px;margin-bottom:12px;}
+.order-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px;}
+.order-name{font-weight:700;}
+.order-meta{color:var(--muted);font-size:12.5px;}
+.order-right{text-align:right;}
+.order-total{font-family:var(--font-mono);font-weight:700;color:var(--cobalt);}
+.order-date{color:#a39d8d;font-size:11.5px;}
+.order-items{margin:8px 0;padding-left:18px;font-size:13px;color:#4a4638;}
+.order-comment{font-size:12.5px;color:var(--muted);font-style:italic;margin-bottom:8px;}
+.order-actions{display:flex;gap:8px;}
+.order-actions .btn{flex:1;}
+
+/* ---------- FOOTER ---------- */
+.site-footer{max-width:1180px;margin:40px auto 0;padding:0 24px;}
+.footer-inner{background:var(--ink);color:#EDE7D6;border-radius:14px;padding:18px 22px;display:flex;align-items:center;gap:16px;}
+.footer-stamp{font-family:var(--font-display);font-weight:700;color:var(--saffron);border:2px solid var(--saffron);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;}
+.footer-title{font-size:12.5px;color:#B8B199;}
+.footer-phone{color:#F3EEE0;font-family:var(--font-mono);font-weight:600;font-size:14.5px;text-decoration:none;}
+.footer-phone:hover{color:var(--saffron);}
+</style>
 </head>
 <body>
 <div id="root"></div>
 <script>
 const { useState, useMemo, useEffect, useRef } = React;
+const h = React.createElement;
 
 if (!window.storage) {
   window.storage = {
@@ -332,102 +492,291 @@ if (!window.storage) {
   };
 }
 
-const MIN_ORDER = 2000;
-const REP_PHONE = "996500144604"; // Айдар
-const REP_NAME = "Айдар";
+/* =========================================================================
+   БЕЛЫЙ ЛЕЙБЛ — как адаптировать сайт под другого поставщика или бренд
+   -------------------------------------------------------------------
+   1. CONFIG ниже — имя поставщика, торгпред, телефон, минимальная сумма.
+   2. CATEGORIES — категории каталога (вкладки).
+   3. PRODUCTS — товары: название, бренд, объём/фасовка, цена, категория.
+   4. Палитра брендов — BRAND_COLORS. Общая палитра сайта — переменные
+      :root в блоке <style> (--ink, --paper, --saffron и т.д.)
+   Вёрстка, корзина, счётчик минимальной суммы, сборка текста заявки и
+   отправка в WhatsApp никак не привязаны к конкретным товарам — можно
+   полностью заменить CATEGORIES и PRODUCTS под любой опт-каталог.
+   ========================================================================= */
+
+const CONFIG = {
+  minOrder: 2000,
+  repPhone: "996500144604", // Айдар — номер для приёма заявок в WhatsApp
+  repName: "Айдар",
+  city: "Бишкек",
+  supplierCountry: "Иран",
+};
+
 function waLink(text) {
-  return `https://wa.me/${REP_PHONE}?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/${CONFIG.repPhone}?text=${encodeURIComponent(text)}`;
 }
-const CATEGORIES = [{
-  id: "hair",
-  label: "Волосы"
-}, {
-  id: "skin",
-  label: "Кожа и лицо"
-}, {
-  id: "body",
-  label: "Тело и мыло"
-}, {
-  id: "laundry",
-  label: "Стирка"
-}, {
-  id: "dish",
-  label: "Посуда и ПММ"
-}, {
-  id: "home",
-  label: "Уборка дома"
-}, {
-  id: "dental",
-  label: "Зубная паста"
-}, {
-  id: "kids",
-  label: "Детям"
-}, {
-  id: "fem",
-  label: "Гигиена"
-}];
+
+const CATEGORIES = [
+  { id: "hair", label: "Волосы" },
+  { id: "skin", label: "Кожа и лицо" },
+  { id: "body", label: "Тело и мыло" },
+  { id: "laundry", label: "Стирка" },
+  { id: "dish", label: "Посуда и ПММ" },
+  { id: "home", label: "Уборка дома" },
+  { id: "dental", label: "Зубная паста" },
+  { id: "kids", label: "Детям" },
+  { id: "fem", label: "Гигиена" },
+];
+
 let _id = 0;
-const it = (name, brand, unit, price, cat, note) => ({
-  id: `p${_id++}`,
-  name,
-  brand,
-  unit,
-  price,
-  cat,
-  note
-});
+const it = (name, brand, unit, price, cat, note) => ({ id: `p${_id++}`, name, brand, unit, price, cat, note });
+
 const PRODUCTS = [
 // ===== HAIR =====
-it("Кондиционер для волос 10 в 1", "BIO'L", "200 мл", 320, "hair"), it("Шампунь для волос 10 в 1", "BIO'L", "400 мл", 280, "hair"), it("Шампунь 3в1 (шампунь+кондиционер+маска)", "BIO'L", "250 мл", 320, "hair"), it("Несмываемый лосьон 10 в 1", "BIO'L", "400 мл", 400, "hair"), it("Несмываемый лосьон 10 в 1", "BIO'L", "240 мл", 280, "hair"), it("Масло рисовых отрубей и виноградных косточек", "BIO'L", "80 мл", 280, "hair"), it("Масло жожоба и марокканское", "BIO'L", "80 мл", 280, "hair"), it("Ультрасильный лак для волос", "BIO'L", "250 мл", 200, "hair"), it("Ультрасильный лак для волос", "BIO'L", "500 мл", 320, "hair"), it("Сверхсильный лак для волос", "BIO'L", "250 мл", 200, "hair"), it("Сверхсильный лак для волос", "BIO'L", "500 мл", 320, "hair"), it("Мусс для волос", "BIO'L", "200 мл", 280, "hair"), it("Краска для волос (без окислителя)", "BIO'L", "100 мл", 145, "hair", "укажите оттенок в комментарии"), it("Шампунь восстанавливающий с протеином, кератином", "Active", "350 мл", 150, "hair"), it("Шампунь увлажняющий с протеинами шёлка", "Active", "350 мл", 150, "hair"), it("Шампунь питательный с кокосовым молочком", "Active", "350 мл", 150, "hair"), it("Шампунь для объёма с каолином и гуаром", "Active", "350 мл", 150, "hair"), it("Шампунь мужской против перхоти", "Active", "350 мл", 150, "hair"), it("Шампунь против выпадения волос (гибискус)", "Active", "350 мл", 150, "hair"), it("Шампунь для окрашенных волос (кератин)", "Active", "350 мл", 150, "hair"), it("Шампунь с экстрактом грейпфрута и женьшеня", "Active", "400 мл", 150, "hair"), it("Шампунь с экстрактом граната и календулы", "Active", "400 мл", 150, "hair"), it("Шампунь для объёма «Зелёный чай и инжир»", "Active", "400 мл", 150, "hair"), it("Кондиционер «Экстракт цветов» (сухие/повреждённые)", "Active", "400 мл", 160, "hair"), it("Кондиционер «Экстракт розовой лилии» (нормальные)", "Active", "400 мл", 160, "hair"), it("Шампунь для объёма волос «Кедр»", "Roya", "400 мл", 100, "hair"), it("Шампунь для укрепления волос «Миндаль»", "Roya", "400 мл", 100, "hair"), it("Шампунь для увлажнения волос «Инжир»", "Roya", "400 мл", 100, "hair"), it("Шампунь для окрашенных волос «Гранат»", "Roya", "400 мл", 100, "hair"),
+it("Кондиционер для волос 10 в 1", "BIO'L", "200 мл", 320, "hair"),
+it("Шампунь для волос 10 в 1", "BIO'L", "400 мл", 280, "hair"),
+it("Шампунь 3в1 (шампунь+кондиционер+маска)", "BIO'L", "250 мл", 320, "hair"),
+it("Несмываемый лосьон 10 в 1", "BIO'L", "400 мл", 400, "hair"),
+it("Несмываемый лосьон 10 в 1", "BIO'L", "240 мл", 280, "hair"),
+it("Масло рисовых отрубей и виноградных косточек", "BIO'L", "80 мл", 280, "hair"),
+it("Масло жожоба и марокканское", "BIO'L", "80 мл", 280, "hair"),
+it("Ультрасильный лак для волос", "BIO'L", "250 мл", 200, "hair"),
+it("Ультрасильный лак для волос", "BIO'L", "500 мл", 320, "hair"),
+it("Сверхсильный лак для волос", "BIO'L", "250 мл", 200, "hair"),
+it("Сверхсильный лак для волос", "BIO'L", "500 мл", 320, "hair"),
+it("Мусс для волос", "BIO'L", "200 мл", 280, "hair"),
+it("Краска для волос (без окислителя)", "BIO'L", "100 мл", 145, "hair", "укажите оттенок в комментарии"),
+it("Шампунь восстанавливающий с протеином, кератином", "Active", "350 мл", 150, "hair"),
+it("Шампунь увлажняющий с протеинами шёлка", "Active", "350 мл", 150, "hair"),
+it("Шампунь питательный с кокосовым молочком", "Active", "350 мл", 150, "hair"),
+it("Шампунь для объёма с каолином и гуаром", "Active", "350 мл", 150, "hair"),
+it("Шампунь мужской против перхоти", "Active", "350 мл", 150, "hair"),
+it("Шампунь против выпадения волос (гибискус)", "Active", "350 мл", 150, "hair"),
+it("Шампунь для окрашенных волос (кератин)", "Active", "350 мл", 150, "hair"),
+it("Шампунь с экстрактом грейпфрута и женьшеня", "Active", "400 мл", 150, "hair"),
+it("Шампунь с экстрактом граната и календулы", "Active", "400 мл", 150, "hair"),
+it("Шампунь для объёма «Зелёный чай и инжир»", "Active", "400 мл", 150, "hair"),
+it("Кондиционер «Экстракт цветов» (сухие/повреждённые)", "Active", "400 мл", 160, "hair"),
+it("Кондиционер «Экстракт розовой лилии» (нормальные)", "Active", "400 мл", 160, "hair"),
+it("Шампунь для объёма волос «Кедр»", "Roya", "400 мл", 100, "hair"),
+it("Шампунь для укрепления волос «Миндаль»", "Roya", "400 мл", 100, "hair"),
+it("Шампунь для увлажнения волос «Инжир»", "Roya", "400 мл", 100, "hair"),
+it("Шампунь для окрашенных волос «Гранат»", "Roya", "400 мл", 100, "hair"),
 // ===== SKIN =====
-it("Крем с маточным молочком", "BIO'L", "200 мл", 280, "skin"), it("Крем с протеинами шёлка", "BIO'L", "200 мл", 280, "skin"), it("Крем с кокосовым маслом и коллагеном", "BIO'L", "200 мл", 280, "skin"), it("Крем с маслом ши", "BIO'L", "200 мл", 280, "skin"), it("Крем с матчей (для очень сухой кожи)", "BIO'L", "200 мл", 280, "skin"), it("Крем с аргановым маслом", "BIO'L", "200 мл", 280, "skin"), it("Крем с маслом шиповника", "BIO'L", "200 мл", 280, "skin"), it("Крем для рук с овсяным молоком", "BIO'L", "70 мл", 160, "skin"), it("Крем для рук с маслом ши", "BIO'L", "70 мл", 160, "skin"), it("Крем для рук с кокосовым молоком", "BIO'L", "70 мл", 160, "skin"), it("Скраб для умывания (масло жожоба)", "BIO'L", "200 мл", 360, "skin"), it("Скраб для умывания матча", "BIO'L", "200 мл", 360, "skin"), it("Мицеллярный гель матча", "BIO'L", "250 мл", 360, "skin"), it("Очищающий гель для лица (масло жожоба)", "BIO'L", "250 мл", 360, "skin"), it("Очищающий гель для лица (семена чиа)", "BIO'L", "250 мл", 360, "skin"), it("Пена для бритья мятная 2в1", "BIO'L", "200 мл", 160, "skin"), it("Пена для бритья для чувствительной кожи", "BIO'L", "200 мл", 160, "skin"), it("Бальзам для губ (ягода, с тинтом)", "BIO'L", "3,5 г", 145, "skin"), it("Бальзам для губ медицинский (без тона)", "BIO'L", "3,5 г", 145, "skin"), it("Бальзам для губ мужской", "BIO'L", "3,5 г", 145, "skin"),
+it("Крем с маточным молочком", "BIO'L", "200 мл", 280, "skin"),
+it("Крем с протеинами шёлка", "BIO'L", "200 мл", 280, "skin"),
+it("Крем с кокосовым маслом и коллагеном", "BIO'L", "200 мл", 280, "skin"),
+it("Крем с маслом ши", "BIO'L", "200 мл", 280, "skin"),
+it("Крем с матчей (для очень сухой кожи)", "BIO'L", "200 мл", 280, "skin"),
+it("Крем с аргановым маслом", "BIO'L", "200 мл", 280, "skin"),
+it("Крем с маслом шиповника", "BIO'L", "200 мл", 280, "skin"),
+it("Крем для рук с овсяным молоком", "BIO'L", "70 мл", 160, "skin"),
+it("Крем для рук с маслом ши", "BIO'L", "70 мл", 160, "skin"),
+it("Крем для рук с кокосовым молоком", "BIO'L", "70 мл", 160, "skin"),
+it("Скраб для умывания (масло жожоба)", "BIO'L", "200 мл", 360, "skin"),
+it("Скраб для умывания матча", "BIO'L", "200 мл", 360, "skin"),
+it("Мицеллярный гель матча", "BIO'L", "250 мл", 360, "skin"),
+it("Очищающий гель для лица (масло жожоба)", "BIO'L", "250 мл", 360, "skin"),
+it("Очищающий гель для лица (семена чиа)", "BIO'L", "250 мл", 360, "skin"),
+it("Пена для бритья мятная 2в1", "BIO'L", "200 мл", 160, "skin"),
+it("Пена для бритья для чувствительной кожи", "BIO'L", "200 мл", 160, "skin"),
+it("Бальзам для губ (ягода, с тинтом)", "BIO'L", "3,5 г", 145, "skin"),
+it("Бальзам для губ медицинский (без тона)", "BIO'L", "3,5 г", 145, "skin"),
+it("Бальзам для губ мужской", "BIO'L", "3,5 г", 145, "skin"),
 // ===== BODY / SOAP =====
-it("Скраб для тела кремовый «Кофе с молоком»", "BIO'L", "400 мл", 280, "body"), it("Скраб для тела кремовый «Ягоды»", "BIO'L", "400 мл", 280, "body"), it("Женский спрей для тела", "BIO'L", "150 мл", 200, "body", "укажите аромат: Proud/Remember/Stay/Complete/Hold Of Me"), it("Мужской спрей для тела", "BIO'L", "150 мл", 200, "body", "укажите аромат (9 вариантов)"), it("Антиперспирант ролик", "BIO'L", "150 мл", 160, "body", "Beauty / Fresh / Soft Touch"), it("Гель для душа мужской 3D с витамином B5", "Active", "400 мл", 140, "body"), it("Гель для душа «Красная орхидея»", "Active", "400 мл", 140, "body"), it("Гель для душа «Морской бриз»", "Active", "400 мл", 140, "body"), it("Гель для душа «Экстракт грейпфрута»", "Active", "400 мл", 140, "body"), it("Гель для душа зелёный", "Roya", "400 мл", 100, "body"), it("Гель для душа белый", "Roya", "400 мл", 100, "body"), it("Твёрдое мыло Glaya (роза/лаванда/лимон)", "Glaya", "90 г", 23, "body", "укажите аромат"), it("Хозяйственное мыло", "Active", "220 г", 38, "body"), it("Твёрдое мыло Pezhman (лайм/орхидея/лимон)", "Pezhman", "125 г", 30, "body", "укажите аромат"), it("Жидкое мыло жемчужное", "Active", "450 мл", 125, "body", "лазурный берег / гранат / виноград / корица"), it("Жидкое мыло жемчужное (канистра)", "Active", "3,75 л", 625, "body", "гранат / корица"), it("Пенка-мыло жемчужное «Бриллиант»", "Active", "500 мл", 150, "body", "чёрный / красный / голубой"), it("Жидкое крем-мыло", "Active", "350 мл", 140, "body", "розовое / фиолетовое / зелёное"),
+it("Скраб для тела кремовый «Кофе с молоком»", "BIO'L", "400 мл", 280, "body"),
+it("Скраб для тела кремовый «Ягоды»", "BIO'L", "400 мл", 280, "body"),
+it("Женский спрей для тела", "BIO'L", "150 мл", 200, "body", "укажите аромат: Proud/Remember/Stay/Complete/Hold Of Me"),
+it("Мужской спрей для тела", "BIO'L", "150 мл", 200, "body", "укажите аромат (9 вариантов)"),
+it("Антиперспирант ролик", "BIO'L", "150 мл", 160, "body", "Beauty / Fresh / Soft Touch"),
+it("Гель для душа мужской 3D с витамином B5", "Active", "400 мл", 140, "body"),
+it("Гель для душа «Красная орхидея»", "Active", "400 мл", 140, "body"),
+it("Гель для душа «Морской бриз»", "Active", "400 мл", 140, "body"),
+it("Гель для душа «Экстракт грейпфрута»", "Active", "400 мл", 140, "body"),
+it("Гель для душа зелёный", "Roya", "400 мл", 100, "body"),
+it("Гель для душа белый", "Roya", "400 мл", 100, "body"),
+it("Твёрдое мыло Glaya (роза/лаванда/лимон)", "Glaya", "90 г", 23, "body", "укажите аромат"),
+it("Хозяйственное мыло", "Active", "220 г", 38, "body"),
+it("Твёрдое мыло Pezhman (лайм/орхидея/лимон)", "Pezhman", "125 г", 30, "body", "укажите аромат"),
+it("Жидкое мыло жемчужное", "Active", "450 мл", 125, "body", "лазурный берег / гранат / виноград / корица"),
+it("Жидкое мыло жемчужное (канистра)", "Active", "3,75 л", 625, "body", "гранат / корица"),
+it("Пенка-мыло жемчужное «Бриллиант»", "Active", "500 мл", 150, "body", "чёрный / красный / голубой"),
+it("Жидкое крем-мыло", "Active", "350 мл", 140, "body", "розовое / фиолетовое / зелёное"),
 // ===== LAUNDRY =====
-it("Стиральный порошок автомат Active", "Active", "1,5 кг", 230, "laundry"), it("Стиральный порошок автомат Active", "Active", "3 кг", 350, "laundry"), it("Стиральный порошок автомат Active", "Active", "5 кг", 590, "laundry"), it("Стиральный порошок автомат Active", "Active", "450 г", 80, "laundry"), it("Стиральный порошок автомат Roya", "Roya", "1,5 кг", 210, "laundry"), it("Стиральный порошок автомат Roya", "Roya", "3 кг", 330, "laundry"), it("Стиральный порошок автомат Roya", "Roya", "5 кг", 550, "laundry"), it("Капсулы для стиральной машины (15 шт)", "Active", "уп.", 375, "laundry"), it("Кондиционер для белья (золотой/розовый/голубой)", "Active", "1,5 л", 250, "laundry", "укажите цвет/аромат"), it("Кондиционер для белья (золотой/розовый/голубой)", "Active", "2,5 л", 375, "laundry", "укажите цвет/аромат"), it("Гель для стирки чёрного белья «Орхидея»", "Active", "1,5 л", 290, "laundry"), it("Гель для стирки чёрного белья «Орхидея»", "Active", "2,5 л", 375, "laundry"), it("Гель для стирки универсальный «Альпийские луга»", "Active", "1,5 л", 290, "laundry"), it("Гель для стирки универсальный «Альпийские луга»", "Active", "2,5 л", 400, "laundry"), it("Гель для стирки детского белья", "Active", "1,5 л", 295, "laundry", "розовый / голубой"), it("Гель для стирки «Поли Вош»", "Active", "1,5 л", 290, "laundry", "голубой / фиолетовый"), it("Гель для стирки «Поли Вош»", "Active", "2,5 л", 440, "laundry", "голубой / фиолетовый"), it("Гель для стирки универсальный «Степные цветы»", "Active", "1,5 л", 290, "laundry"), it("Гель для стирки универсальный «Степные цветы»", "Active", "2,5 л", 440, "laundry"), it("Гель для стирки универсальный", "Roya", "1,2 л", 160, "laundry"),
+it("Стиральный порошок автомат Active", "Active", "1,5 кг", 230, "laundry"),
+it("Стиральный порошок автомат Active", "Active", "3 кг", 350, "laundry"),
+it("Стиральный порошок автомат Active", "Active", "5 кг", 590, "laundry"),
+it("Стиральный порошок автомат Active", "Active", "450 г", 80, "laundry"),
+it("Стиральный порошок автомат Roya", "Roya", "1,5 кг", 210, "laundry"),
+it("Стиральный порошок автомат Roya", "Roya", "3 кг", 330, "laundry"),
+it("Стиральный порошок автомат Roya", "Roya", "5 кг", 550, "laundry"),
+it("Капсулы для стиральной машины (15 шт)", "Active", "уп.", 375, "laundry"),
+it("Кондиционер для белья (золотой/розовый/голубой)", "Active", "1,5 л", 250, "laundry", "укажите цвет/аромат"),
+it("Кондиционер для белья (золотой/розовый/голубой)", "Active", "2,5 л", 375, "laundry", "укажите цвет/аромат"),
+it("Гель для стирки чёрного белья «Орхидея»", "Active", "1,5 л", 290, "laundry"),
+it("Гель для стирки чёрного белья «Орхидея»", "Active", "2,5 л", 375, "laundry"),
+it("Гель для стирки универсальный «Альпийские луга»", "Active", "1,5 л", 290, "laundry"),
+it("Гель для стирки универсальный «Альпийские луга»", "Active", "2,5 л", 400, "laundry"),
+it("Гель для стирки детского белья", "Active", "1,5 л", 295, "laundry", "розовый / голубой"),
+it("Гель для стирки «Поли Вош»", "Active", "1,5 л", 290, "laundry", "голубой / фиолетовый"),
+it("Гель для стирки «Поли Вош»", "Active", "2,5 л", 440, "laundry", "голубой / фиолетовый"),
+it("Гель для стирки универсальный «Степные цветы»", "Active", "1,5 л", 290, "laundry"),
+it("Гель для стирки универсальный «Степные цветы»", "Active", "2,5 л", 440, "laundry"),
+it("Гель для стирки универсальный", "Roya", "1,2 л", 160, "laundry"),
 // ===== DISH / DISHWASHER =====
-it("Таблетки для посудомоечной машины (22 шт)", "Active Pro Shine", "уп.", 410, "dish"), it("Соль для посудомоечной машины", "Active Pro Shine", "2 кг", 300, "dish"), it("Ополаскиватель для посудомоечной машины", "Active Pro Shine", "500 мл", 170, "dish"), it("Порошок для посудомоечной машины", "Active Pro Shine", "1 кг", 310, "dish"), it("Гель для посудомоечной машины", "Active Pro Shine", "1000 г", 415, "dish"), it("Гель для мытья посуды (виноград/лайм-цветы/клубника-малина)", "Active", "750 мл", 140, "dish", "укажите вкус"), it("Гель для мытья посуды (виноград/лайм-цветы/клубника-малина)", "Active", "500 мл", 95, "dish", "укажите вкус"), it("Гель для мытья посуды «Голд Апельсин»", "Active", "750 мл", 140, "dish"), it("Гель для мытья посуды (виноград/лайм/клубника)", "Active", "3,5 л", 525, "dish", "укажите вкус"), it("Гель для мытья посуды (лаванда/лимон/яблоко)", "Roya", "500 мл", 80, "dish", "укажите вкус"), it("Гель для мытья посуды (лаванда/лимон/яблоко)", "Roya", "1000 мл", 140, "dish", "укажите вкус"), it("Гель для мытья посуды (яблоко/лаванда)", "Roya", "3,5 л", 410, "dish", "укажите вкус"),
+it("Таблетки для посудомоечной машины (22 шт)", "Active Pro Shine", "уп.", 410, "dish"),
+it("Соль для посудомоечной машины", "Active Pro Shine", "2 кг", 300, "dish"),
+it("Ополаскиватель для посудомоечной машины", "Active Pro Shine", "500 мл", 170, "dish"),
+it("Порошок для посудомоечной машины", "Active Pro Shine", "1 кг", 310, "dish"),
+it("Гель для посудомоечной машины", "Active Pro Shine", "1000 г", 415, "dish"),
+it("Гель для мытья посуды (виноград/лайм-цветы/клубника-малина)", "Active", "750 мл", 140, "dish", "укажите вкус"),
+it("Гель для мытья посуды (виноград/лайм-цветы/клубника-малина)", "Active", "500 мл", 95, "dish", "укажите вкус"),
+it("Гель для мытья посуды «Голд Апельсин»", "Active", "750 мл", 140, "dish"),
+it("Гель для мытья посуды (виноград/лайм/клубника)", "Active", "3,5 л", 525, "dish", "укажите вкус"),
+it("Гель для мытья посуды (лаванда/лимон/яблоко)", "Roya", "500 мл", 80, "dish", "укажите вкус"),
+it("Гель для мытья посуды (лаванда/лимон/яблоко)", "Roya", "1000 мл", 140, "dish", "укажите вкус"),
+it("Гель для мытья посуды (яблоко/лаванда)", "Roya", "3,5 л", 410, "dish", "укажите вкус"),
 // ===== HOME CLEANING =====
-it("Средство для очистки кухонных поверхностей", "Active", "700 мл", 150, "home"), it("Средство для очистки стёкол и зеркал", "Active", "500 мл", 125, "home"), it("Универсальный очиститель", "Active", "700 мл", 150, "home"), it("Пятновыводитель", "Active", "500 мл", 160, "home"), it("Чистящее средство для ванных поверхностей", "Active", "700 мл", 150, "home"), it("Белизна", "Active", "1 л", 110, "home"), it("Белизна", "Active", "4 л", 375, "home"), it("Белизна (хлорка) с ароматом лимона", "Active", "4 л", 375, "home"), it("Утёнок фиолетовый (лаванда)", "Active", "750 мл", 160, "home"), it("Утёнок зелёный (ель)", "Active", "750 мл", 160, "home"), it("Универсальный отбеливатель (гель)", "Active", "750 мл", 160, "home"), it("Средство для очистки стёкол и зеркал", "Roya", "400 мл", 100, "home"), it("Туалетная бумага Imzar (10 шт)", "Imzar", "уп.", 150, "home"), it("Сухие салфетки Imzar (6 пачек)", "Imzar", "уп.", 150, "home"), it("Влажные салфетки большие (80 шт)", "—", "уп.", 110, "home"), it("Влажные салфетки средние (80 шт)", "—", "уп.", 100, "home"),
+it("Средство для очистки кухонных поверхностей", "Active", "700 мл", 150, "home"),
+it("Средство для очистки стёкол и зеркал", "Active", "500 мл", 125, "home"),
+it("Универсальный очиститель", "Active", "700 мл", 150, "home"),
+it("Пятновыводитель", "Active", "500 мл", 160, "home"),
+it("Чистящее средство для ванных поверхностей", "Active", "700 мл", 150, "home"),
+it("Белизна", "Active", "1 л", 110, "home"),
+it("Белизна", "Active", "4 л", 375, "home"),
+it("Белизна (хлорка) с ароматом лимона", "Active", "4 л", 375, "home"),
+it("Утёнок фиолетовый (лаванда)", "Active", "750 мл", 160, "home"),
+it("Утёнок зелёный (ель)", "Active", "750 мл", 160, "home"),
+it("Универсальный отбеливатель (гель)", "Active", "750 мл", 160, "home"),
+it("Средство для очистки стёкол и зеркал", "Roya", "400 мл", 100, "home"),
+it("Туалетная бумага Imzar (10 шт)", "Imzar", "уп.", 150, "home"),
+it("Сухие салфетки Imzar (6 пачек)", "Imzar", "уп.", 150, "home"),
+it("Влажные салфетки большие (80 шт)", "—", "уп.", 110, "home"),
+it("Влажные салфетки средние (80 шт)", "—", "уп.", 100, "home"),
 // ===== DENTAL =====
-it("Зубная паста «Отбеливающая» Whitening", "ActiDent", "130 г", 125, "dental"), it("Зубная паста «Комплексный уход» Complimax", "ActiDent", "130 г", 125, "dental"), it("Детская зубная паста со вкусом клубники", "ActiDent", "70 г", 70, "dental"), it("Детская зубная паста со вкусом арбуза", "ActiDent", "70 г", 70, "dental"),
+it("Зубная паста «Отбеливающая» Whitening", "ActiDent", "130 г", 125, "dental"),
+it("Зубная паста «Комплексный уход» Complimax", "ActiDent", "130 г", 125, "dental"),
+it("Детская зубная паста со вкусом клубники", "ActiDent", "70 г", 70, "dental"),
+it("Детская зубная паста со вкусом арбуза", "ActiDent", "70 г", 70, "dental"),
 // ===== KIDS =====
-it("Детский шампунь «Львёночек» (банан)", "Active", "250 мл", 125, "kids"), it("Детский шампунь «Обезьянка» (ваниль)", "Active", "250 мл", 125, "kids"), it("Детский шампунь «Зайка» (малина)", "Active", "250 мл", 125, "kids"), it("Детский шампунь и кондиционер 2в1", "Active", "280 мл", 125, "kids", "Sponge Bob / Spiderman / Minions / Frozen"), it("Влажные салфетки детские (80 шт)", "—", "уп.", 100, "kids"),
+it("Детский шампунь «Львёночек» (банан)", "Active", "250 мл", 125, "kids"),
+it("Детский шампунь «Обезьянка» (ваниль)", "Active", "250 мл", 125, "kids"),
+it("Детский шампунь «Зайка» (малина)", "Active", "250 мл", 125, "kids"),
+it("Детский шампунь и кондиционер 2в1", "Active", "280 мл", 125, "kids", "Sponge Bob / Spiderman / Minions / Frozen"),
+it("Влажные салфетки детские (80 шт)", "—", "уп.", 100, "kids"),
 // ===== FEMININE HYGIENE =====
-it("Прокладки Parmiss Medium (3 капли)", "Parmiss", "10 шт", 95, "fem"), it("Прокладки Parmiss Large розовые (5 капель)", "Parmiss", "10 шт", 95, "fem"), it("Прокладки Parmiss Large оранжевые (4 капли)", "Parmiss", "10 шт", 95, "fem"), it("Прокладки Parmiss XL розовые (6 капель)", "Parmiss", "10 шт", 105, "fem"), it("Прокладки Parmiss маленькие оранжевые (5 капель)", "Parmiss", "10 шт", 105, "fem"), it("Прокладки Parmiss Pink (5 капель)", "Parmiss", "10 шт", 105, "fem"), it("Прокладки Parmiss XL белые (7 капель)", "Parmiss", "10 шт", 105, "fem"), it("Прокладки Parmiss Роза (6 капель)", "Parmiss", "10 шт", 105, "fem")];
+it("Прокладки Parmiss Medium (3 капли)", "Parmiss", "10 шт", 95, "fem"),
+it("Прокладки Parmiss Large розовые (5 капель)", "Parmiss", "10 шт", 95, "fem"),
+it("Прокладки Parmiss Large оранжевые (4 капли)", "Parmiss", "10 шт", 95, "fem"),
+it("Прокладки Parmiss XL розовые (6 капель)", "Parmiss", "10 шт", 105, "fem"),
+it("Прокладки Parmiss маленькие оранжевые (5 капель)", "Parmiss", "10 шт", 105, "fem"),
+it("Прокладки Parmiss Pink (5 капель)", "Parmiss", "10 шт", 105, "fem"),
+it("Прокладки Parmiss XL белые (7 капель)", "Parmiss", "10 шт", 105, "fem"),
+it("Прокладки Parmiss Роза (6 капель)", "Parmiss", "10 шт", 105, "fem"),
+];
+
 const BRAND_COLORS = {
-  "BIO'L": "#1E8F5B",
-  "Active": "#1F3FA0",
-  "Active Pro Shine": "#1F3FA0",
-  "Roya": "#2E8FE0",
-  "Parmiss": "#D63384",
+  "BIO'L": "#4F7A5B",
+  "Active": "#2B4C7E",
+  "Active Pro Shine": "#1F3A63",
+  "Roya": "#3E7CA6",
+  "Parmiss": "#B85C6B",
   "Glaya": "#6B5B95",
-  "Pezhman": "#5C8A3A",
-  "ActiDent": "#C62828",
-  "Imzar": "#2F4F3F",
-  "—": "#9A9488"
+  "Pezhman": "#6B7F3A",
+  "ActiDent": "#B4432E",
+  "Imzar": "#3F4F45",
+  "—": "#9A9488",
 };
-function brandColor(b) {
-  return BRAND_COLORS[b] || "#6b5b95";
+function brandColor(b) { return BRAND_COLORS[b] || "#6b5b95"; }
+function formatSom(n) { return n.toLocaleString("ru-RU") + " сом"; }
+
+function Stepper({ qty, onChange }) {
+  return h("div", { className: "stepper" },
+    h("button", { className: "step-btn", type: "button", onClick: () => onChange(qty - 1) }, "−"),
+    h("input", {
+      className: "step-input", type: "number", min: "0", value: qty,
+      onChange: e => onChange(parseInt(e.target.value || "0", 10)),
+    }),
+    h("button", { className: "step-btn", type: "button", onClick: () => onChange(qty + 1) }, "+"),
+  );
 }
-function formatSom(n) {
-  return n.toLocaleString("ru-RU") + " сом";
+
+function ProductCard({ p, qty, onChange }) {
+  const bc = brandColor(p.brand);
+  return h("div", { className: "product-card", style: { "--brand-color": bc } },
+    h("div", { className: "card-top" },
+      h("span", { className: "brand-tag", style: { background: bc } }, p.brand),
+      h("span", { className: "unit-tag" }, p.unit),
+    ),
+    h("div", { className: "card-name" }, p.name),
+    p.note && h("div", { className: "card-note" }, p.note),
+    h("div", { className: "card-bottom" },
+      h("div", { className: "leader" },
+        h("span", { className: "price" }, formatSom(p.price)),
+      ),
+      h(Stepper, { qty, onChange: q => onChange(p.id, Math.max(0, q)) }),
+    ),
+  );
 }
+
+function OrdersView({ orders, loading }) {
+  if (loading) return h("div", { className: "orders-loading" }, "Загрузка…");
+  if (!orders.length) return h("div", { className: "empty-state" }, "Заявок пока нет.");
+  return h("div", { className: "orders-list" },
+    h("div", { className: "orders-note" }, "Список заявок общий — его видит каждый, у кого есть ссылка на эту страницу."),
+    orders.map(o => h("div", { className: "order-card", key: o.id },
+      h("div", { className: "order-head" },
+        h("div", null,
+          h("div", { className: "order-name" }, o.fio),
+          h("div", { className: "order-meta" }, o.phone, " · ", o.address),
+        ),
+        h("div", { className: "order-right" },
+          h("div", { className: "order-total" }, formatSom(o.total)),
+          h("div", { className: "order-date" }, new Date(o.ts).toLocaleString("ru-RU")),
+        ),
+      ),
+      h("ul", { className: "order-items" },
+        o.items.map((i, idx) => h("li", { key: idx }, i.qty, " × ", i.name, " (", i.unit, ") — ", formatSom(i.sum))),
+      ),
+      o.comment && h("div", { className: "order-comment" }, "Комментарий: ", o.comment),
+      h("div", { className: "order-actions" },
+        h("a", { className: "btn btn-whatsapp", href: waLink(orderText(o)), target: "_blank", rel: "noopener noreferrer" }, "В WhatsApp"),
+        h("button", { className: "btn btn-ghost", onClick: () => copyText(orderText(o)) }, "Копировать"),
+      ),
+    )),
+  );
+}
+
+function orderText(order) {
+  const lines = [];
+  lines.push("ЗАЯВКА НА ОПТ");
+  lines.push(`ФИО: ${order.fio}`);
+  lines.push(`Телефон: ${order.phone}`);
+  lines.push(`Адрес: ${order.address}`);
+  if (order.comment) lines.push(`Комментарий: ${order.comment}`);
+  lines.push("");
+  order.items.forEach(i => lines.push(`${i.qty} x ${i.name} (${i.unit}) — ${formatSom(i.sum)}`));
+  lines.push("");
+  lines.push(`ИТОГО: ${formatSom(order.total)}`);
+  return lines.join("\n");
+}
+function copyText(text) { navigator.clipboard && navigator.clipboard.writeText(text); }
+
 function App() {
   const [activeCat, setActiveCat] = useState("hair");
   const [query, setQuery] = useState("");
   const [cart, setCart] = useState({});
-  const [notes, setNotes] = useState({});
   const [fio, setFio] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [comment, setComment] = useState("");
-  const [view, setView] = useState("catalog"); // catalog | orders
+  const [view, setView] = useState("catalog");
   const [submitted, setSubmitted] = useState(null);
   const [errors, setErrors] = useState([]);
   const [orders, setOrders] = useState([]);
   const [loadingOrders, setLoadingOrders] = useState(false);
-  const receiptRef = useRef(null);
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return PRODUCTS.filter(p => {
@@ -436,25 +785,19 @@ function App() {
       return q ? matchesQ : matchesCat;
     });
   }, [activeCat, query]);
+
   const cartItems = useMemo(() => {
     return Object.entries(cart).filter(([, qty]) => qty > 0).map(([id, qty]) => {
       const p = PRODUCTS.find(x => x.id === id);
-      return {
-        ...p,
-        qty,
-        sum: p.price * qty
-      };
+      return { ...p, qty, sum: p.price * qty };
     });
   }, [cart]);
+
   const total = cartItems.reduce((s, i) => s + i.sum, 0);
-  const progress = Math.min(100, Math.round(total / MIN_ORDER * 100));
-  const remaining = Math.max(0, MIN_ORDER - total);
-  const setQty = (id, qty) => {
-    setCart(c => ({
-      ...c,
-      [id]: Math.max(0, qty)
-    }));
-  };
+  const progress = Math.min(100, Math.round((total / CONFIG.minOrder) * 100));
+  const remaining = Math.max(0, CONFIG.minOrder - total);
+  const setQty = (id, qty) => setCart(c => ({ ...c, [id]: Math.max(0, qty) }));
+
   async function loadOrders() {
     setLoadingOrders(true);
     try {
@@ -465,29 +808,25 @@ function App() {
         try {
           const r = await window.storage.get(k, true);
           if (r && r.value) results.push(JSON.parse(r.value));
-        } catch (e) {
-          /* skip missing */
-        }
+        } catch (e) { /* skip missing */ }
       }
       results.sort((a, b) => (b.ts || 0) - (a.ts || 0));
       setOrders(results);
-    } catch (e) {
-      setOrders([]);
-    }
+    } catch (e) { setOrders([]); }
     setLoadingOrders(false);
   }
-  useEffect(() => {
-    if (view === "orders") loadOrders();
-  }, [view]);
+  useEffect(() => { if (view === "orders") loadOrders(); }, [view]);
+
   function validate() {
     const errs = [];
-    if (total < MIN_ORDER) errs.push(`Минимальная сумма заявки — ${formatSom(MIN_ORDER)}. Не хватает ${formatSom(remaining)}.`);
+    if (total < CONFIG.minOrder) errs.push(`Минимальная сумма заявки — ${formatSom(CONFIG.minOrder)}. Не хватает ${formatSom(remaining)}.`);
     if (cartItems.length === 0) errs.push("Добавьте хотя бы один товар.");
     if (!fio.trim()) errs.push("Укажите ФИО.");
     if (!phone.trim()) errs.push("Укажите номер телефона.");
     if (!address.trim()) errs.push("Укажите адрес доставки.");
     return errs;
   }
+
   async function submitOrder() {
     const errs = validate();
     setErrors(errs);
@@ -495,877 +834,153 @@ function App() {
     const order = {
       id: `order:${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
       ts: Date.now(),
-      fio: fio.trim(),
-      phone: phone.trim(),
-      address: address.trim(),
-      comment: comment.trim(),
-      items: cartItems.map(({
-        id,
-        name,
-        brand,
-        unit,
-        price,
-        qty,
-        sum,
-        note
-      }) => ({
-        id,
-        name,
-        brand,
-        unit,
-        price,
-        qty,
-        sum,
-        note
-      })),
-      total
+      fio: fio.trim(), phone: phone.trim(), address: address.trim(), comment: comment.trim(),
+      items: cartItems.map(({ id, name, brand, unit, price, qty, sum, note }) => ({ id, name, brand, unit, price, qty, sum, note })),
+      total,
     };
-    // Показываем подтверждение сразу — сохранение в общий список не должно блокировать оформление.
     setSubmitted(order);
-    try {
-      await window.storage.set(order.id, JSON.stringify(order), true);
-    } catch (e) {
-      console.error("Order storage failed:", e);
-    }
+    try { await window.storage.set(order.id, JSON.stringify(order), true); }
+    catch (e) { console.error("Order storage failed:", e); }
   }
-  function orderText(order) {
-    const lines = [];
-    lines.push("ЗАЯВКА НА ОПТ");
-    lines.push(`ФИО: ${order.fio}`);
-    lines.push(`Телефон: ${order.phone}`);
-    lines.push(`Адрес: ${order.address}`);
-    if (order.comment) lines.push(`Комментарий: ${order.comment}`);
-    lines.push("");
-    order.items.forEach(i => {
-      lines.push(`${i.qty} x ${i.name} (${i.unit}) — ${formatSom(i.sum)}`);
-    });
-    lines.push("");
-    lines.push(`ИТОГО: ${formatSom(order.total)}`);
-    return lines.join("\n");
-  }
-  function copyText(text) {
-    navigator.clipboard && navigator.clipboard.writeText(text);
-  }
+
   function resetOrder() {
-    setCart({});
-    setFio("");
-    setPhone("");
-    setAddress("");
-    setComment("");
-    setSubmitted(null);
-    setErrors([]);
+    setCart({}); setFio(""); setPhone(""); setAddress(""); setComment(""); setSubmitted(null); setErrors([]);
   }
-  return /*#__PURE__*/React.createElement("div", {
-    style: styles.page
-  }, /*#__PURE__*/React.createElement("style", null, `
-        * { box-sizing: border-box; }
-        input:focus, textarea:focus, button:focus { outline: 2px solid #C98A2C; outline-offset: 1px; }
-        @media (max-width: 880px) {
-          .layout { grid-template-columns: 1fr !important; }
-          .cart-panel { position: static !important; }
-        }
-        @media (max-width: 560px) {
-          .hero-split { flex-direction: column !important; }
-        }
-      `), /*#__PURE__*/React.createElement("header", {
-    style: styles.hero
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "hero-split",
-    style: styles.heroSplit
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.heroBioL
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.heroLogoBioL
-  }, "BIO’L"), /*#__PURE__*/React.createElement("div", {
-    style: styles.heroTag
-  }, "Уходовая косметика из Ирана")), /*#__PURE__*/React.createElement("div", {
-    style: styles.heroActive
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.heroLogoActive
-  }, "Active"), /*#__PURE__*/React.createElement("div", {
-    style: styles.heroTag
-  }, "Бытовая химия из Ирана"))), /*#__PURE__*/React.createElement("div", {
-    style: styles.heroBar
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: styles.eyebrow
-  }, "Оптовая заявка · Бишкек"), /*#__PURE__*/React.createElement("div", {
-    style: styles.heroSub
-  }, "Минимальная сумма заявки — ", formatSom(MIN_ORDER))), /*#__PURE__*/React.createElement("nav", {
-    style: styles.viewSwitch
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => setView("catalog"),
-    style: view === "catalog" ? styles.viewBtnActive : styles.viewBtn
-  }, "Каталог"), /*#__PURE__*/React.createElement("button", {
-    onClick: () => setView("orders"),
-    style: view === "orders" ? styles.viewBtnActive : styles.viewBtn
-  }, "Заявки")))), view === "orders" ? /*#__PURE__*/React.createElement("div", {
-    style: styles.ordersWrap
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.ordersNote
-  }, "Список заявок общий — его видит каждый, у кого есть ссылка на эту страницу."), loadingOrders && /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: 20
-    }
-  }, "Загрузка…"), !loadingOrders && orders.length === 0 && /*#__PURE__*/React.createElement("div", {
-    style: styles.empty
-  }, "Заявок пока нет."), orders.map(o => /*#__PURE__*/React.createElement("div", {
-    key: o.id,
-    style: styles.orderCard
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.orderCardHead
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontWeight: 700
-    }
-  }, o.fio), /*#__PURE__*/React.createElement("div", {
-    style: {
-      color: "#6b6558",
-      fontSize: 13
-    }
-  }, o.phone, " · ", o.address)), /*#__PURE__*/React.createElement("div", {
-    style: {
-      textAlign: "right"
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontWeight: 700,
-      color: "#223A5E"
-    }
-  }, formatSom(o.total)), /*#__PURE__*/React.createElement("div", {
-    style: {
-      color: "#a39d8d",
-      fontSize: 12
-    }
-  }, new Date(o.ts).toLocaleString("ru-RU")))), /*#__PURE__*/React.createElement("ul", {
-    style: styles.orderItemList
-  }, o.items.map((i, idx) => /*#__PURE__*/React.createElement("li", {
-    key: idx
-  }, i.qty, " × ", i.name, " (", i.unit, ") — ", formatSom(i.sum)))), o.comment && /*#__PURE__*/React.createElement("div", {
-    style: styles.orderComment
-  }, "Комментарий: ", o.comment), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: "flex",
-      gap: 8
-    }
-  }, /*#__PURE__*/React.createElement("a", {
-    href: waLink(orderText(o)),
-    target: "_blank",
-    rel: "noopener noreferrer",
-    style: {
-      ...styles.whatsappBtn,
-      marginTop: 0,
-      flex: 1,
-      textAlign: "center"
-    }
-  }, "В WhatsApp"), /*#__PURE__*/React.createElement("button", {
-    style: {
-      ...styles.copyBtn,
-      flex: 1
-    },
-    onClick: () => copyText(orderText(o))
-  }, "Копировать"))))) : /*#__PURE__*/React.createElement("div", {
-    className: "layout",
-    style: styles.layout
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: styles.searchRow
-  }, /*#__PURE__*/React.createElement("input", {
-    placeholder: "Поиск по названию или бренду…",
-    value: query,
-    onChange: e => setQuery(e.target.value),
-    style: styles.search
-  })), !query && /*#__PURE__*/React.createElement("div", {
-    style: styles.tabs
-  }, CATEGORIES.map(c => /*#__PURE__*/React.createElement("button", {
-    key: c.id,
-    onClick: () => setActiveCat(c.id),
-    style: activeCat === c.id ? styles.tabActive : styles.tab
-  }, c.label))), /*#__PURE__*/React.createElement("div", {
-    style: styles.grid
-  }, filtered.map(p => {
-    const qty = cart[p.id] || 0;
-    const bc = brandColor(p.brand);
-    return /*#__PURE__*/React.createElement("div", {
-      key: p.id,
-      style: {
-        ...styles.card,
-        borderLeft: `4px solid ${bc}`
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: styles.cardTop
-    }, /*#__PURE__*/React.createElement("span", {
-      style: {
-        ...styles.brandTag,
-        background: bc
-      }
-    }, p.brand), /*#__PURE__*/React.createElement("span", {
-      style: styles.unitTag
-    }, p.unit)), /*#__PURE__*/React.createElement("div", {
-      style: styles.cardName
-    }, p.name), p.note && /*#__PURE__*/React.createElement("div", {
-      style: styles.cardNote
-    }, p.note), /*#__PURE__*/React.createElement("div", {
-      style: styles.cardBottom
-    }, /*#__PURE__*/React.createElement("div", {
-      style: styles.price
-    }, formatSom(p.price)), /*#__PURE__*/React.createElement("div", {
-      style: styles.stepper
-    }, /*#__PURE__*/React.createElement("button", {
-      style: styles.stepBtn,
-      onClick: () => setQty(p.id, qty - 1)
-    }, "−"), /*#__PURE__*/React.createElement("input", {
-      type: "number",
-      min: "0",
-      value: qty,
-      onChange: e => setQty(p.id, parseInt(e.target.value || "0", 10)),
-      style: styles.stepInput
-    }), /*#__PURE__*/React.createElement("button", {
-      style: styles.stepBtn,
-      onClick: () => setQty(p.id, qty + 1)
-    }, "+"))));
-  }), filtered.length === 0 && /*#__PURE__*/React.createElement("div", {
-    style: styles.empty
-  }, "Ничего не найдено. Попробуйте другой запрос."))), /*#__PURE__*/React.createElement("aside", {
-    className: "cart-panel",
-    style: styles.cartPanel
-  }, submitted ? /*#__PURE__*/React.createElement("div", {
-    style: styles.receipt,
-    ref: receiptRef
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptCheck
-  }, "✓"), /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptTitle
-  }, "Заявка принята"), /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptSub
-  }, "№ ", submitted.id.split(":")[1].split("_")[0]), /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptTotal
-  }, formatSom(submitted.total)), /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptDivider
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 13,
-      color: "#6b6558",
-      marginBottom: 12
-    }
-  }, "Заявка сохранена в общем списке «Заявки». Отправьте её ", REP_NAME, " в WhatsApp — текст уже готов."), /*#__PURE__*/React.createElement("a", {
-    href: waLink(orderText(submitted)),
-    target: "_blank",
-    rel: "noopener noreferrer",
-    style: styles.whatsappBtn
-  }, "Отправить ", REP_NAME, " в WhatsApp"), /*#__PURE__*/React.createElement("div", {
-    style: styles.linkFallback
-  }, "Если кнопка не открывает WhatsApp — нажмите, чтобы скопировать ссылку и вставить её в браузер:", /*#__PURE__*/React.createElement("button", {
-    style: styles.copyBtnSmall,
-    onClick: () => copyText(waLink(orderText(submitted)))
-  }, "Скопировать ссылку")), /*#__PURE__*/React.createElement("button", {
-    style: styles.copyBtn,
-    onClick: () => copyText(orderText(submitted))
-  }, "Скопировать текст заявки"), /*#__PURE__*/React.createElement("button", {
-    style: styles.secondaryBtn,
-    onClick: resetOrder
-  }, "Оформить ещё одну заявку")) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptHeaderRow
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.receiptHeaderTitle
-  }, "Ваша заявка"), /*#__PURE__*/React.createElement("div", {
-    style: styles.itemCount
-  }, cartItems.length, " поз.")), /*#__PURE__*/React.createElement("div", {
-    style: styles.cartList
-  }, cartItems.length === 0 && /*#__PURE__*/React.createElement("div", {
-    style: styles.cartEmpty
-  }, "Пока пусто — добавьте товары слева."), cartItems.map(i => /*#__PURE__*/React.createElement("div", {
-    key: i.id,
-    style: styles.cartRow
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.cartRowText
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.cartRowName
-  }, i.name), /*#__PURE__*/React.createElement("div", {
-    style: styles.cartRowMeta
-  }, i.qty, " × ", formatSom(i.price), " · ", i.unit)), /*#__PURE__*/React.createElement("div", {
-    style: styles.cartRowSum
-  }, formatSom(i.sum))))), /*#__PURE__*/React.createElement("div", {
-    style: styles.progressWrap
-  }, /*#__PURE__*/React.createElement("div", {
-    style: styles.progressLabelRow
-  }, /*#__PURE__*/React.createElement("span", null, "До минимальной заявки"), /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontWeight: 700
-    }
-  }, formatSom(total), " / ", formatSom(MIN_ORDER))), /*#__PURE__*/React.createElement("div", {
-    style: styles.progressTrack
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      ...styles.progressFill,
-      width: `${progress}%`,
-      background: total >= MIN_ORDER ? "#3f7d6d" : "#C98A2C"
-    }
-  })), total < MIN_ORDER && /*#__PURE__*/React.createElement("div", {
-    style: styles.progressHint
-  }, "Добавьте товаров ещё на ", formatSom(remaining))), /*#__PURE__*/React.createElement("div", {
-    style: styles.formFields
-  }, /*#__PURE__*/React.createElement("label", {
-    style: styles.label
-  }, "ФИО"), /*#__PURE__*/React.createElement("input", {
-    style: styles.input,
-    value: fio,
-    onChange: e => setFio(e.target.value),
-    placeholder: "Иванов Иван Иванович"
-  }), /*#__PURE__*/React.createElement("label", {
-    style: styles.label
-  }, "Телефон"), /*#__PURE__*/React.createElement("input", {
-    style: styles.input,
-    value: phone,
-    onChange: e => setPhone(e.target.value),
-    placeholder: "+996 700 000 000"
-  }), /*#__PURE__*/React.createElement("label", {
-    style: styles.label
-  }, "Адрес доставки"), /*#__PURE__*/React.createElement("input", {
-    style: styles.input,
-    value: address,
-    onChange: e => setAddress(e.target.value),
-    placeholder: "Город, район, улица, дом"
-  }), /*#__PURE__*/React.createElement("label", {
-    style: styles.label
-  }, "Комментарий (необязательно)"), /*#__PURE__*/React.createElement("textarea", {
-    style: styles.textarea,
-    value: comment,
-    onChange: e => setComment(e.target.value),
-    placeholder: "Ароматы, оттенки, время доставки…",
-    rows: 2
-  })), errors.length > 0 && /*#__PURE__*/React.createElement("div", {
-    style: styles.errorBox
-  }, errors.map((e, i) => /*#__PURE__*/React.createElement("div", {
-    key: i
-  }, "• ", e))), /*#__PURE__*/React.createElement("div", {
-    style: styles.totalRow
-  }, /*#__PURE__*/React.createElement("span", null, "Итого"), /*#__PURE__*/React.createElement("span", {
-    style: styles.totalSum
-  }, formatSom(total))), /*#__PURE__*/React.createElement("button", {
-    style: styles.submitBtn,
-    onClick: submitOrder
-  }, "Отправить заявку")))));
+
+  return h("div", { className: "page" },
+    h("header", { className: "hero" },
+      h("div", { className: "hero-inner" },
+        h("div", { className: "hero-left" },
+          h("div", { className: "eyebrow" }, `Опт · ${CONFIG.city} · ${CONFIG.supplierCountry}`),
+          h("h1", { className: "hero-title" }, "Заявка на опт ", h("em", null, "без звонков")),
+          h("p", { className: "hero-sub" }, "Соберите заказ по каталогу BIO'L, Active и Roya — заявка сама сложится в готовое сообщение для ", CONFIG.repName, " в WhatsApp."),
+          h("div", { className: "hero-chips" },
+            h("span", { className: "chip" }, "Мин. заявка — ", formatSom(CONFIG.minOrder)),
+            h("span", { className: "chip" }, "Доставка по ", CONFIG.city),
+            h("span", { className: "chip" }, "Оригинал, ", CONFIG.supplierCountry),
+          ),
+        ),
+        h("div", { className: "hero-slip", "aria-hidden": "true" },
+          h("div", { className: "slip-title" }, "Пример заявки"),
+          h("div", { className: "slip-row" }, h("span", null, "Шампунь BIO'L 10 в 1"), h("span", { className: "slip-dots" }), h("span", null, "280 сом")),
+          h("div", { className: "slip-row" }, h("span", null, "Порошок Active 3 кг"), h("span", { className: "slip-dots" }), h("span", null, "350 сом")),
+          h("div", { className: "slip-row" }, h("span", null, "Гель для душа Roya"), h("span", { className: "slip-dots" }), h("span", null, "100 сом")),
+          h("div", { className: "slip-total" }, h("span", null, "Итого"), h("span", null, "2 000+ сом")),
+          h("div", { className: "slip-stamp" }, "ОПТ"),
+        ),
+      ),
+      h("div", { className: "hero-brands" },
+        h("div", { className: "brand-strip brand-strip--biol" },
+          h("span", { className: "brand-mark" }, "BIO’L"),
+          h("span", { className: "brand-desc" }, "Уходовая косметика из Ирана — волосы, кожа, тело"),
+        ),
+        h("div", { className: "brand-strip brand-strip--active" },
+          h("span", { className: "brand-mark brand-mark--italic" }, "Active · Roya"),
+          h("span", { className: "brand-desc" }, "Бытовая химия из Ирана — стирка, посуда, уборка"),
+        ),
+      ),
+      h("nav", { className: "view-switch" },
+        h("button", { className: view === "catalog" ? "view-btn view-btn--active" : "view-btn", onClick: () => setView("catalog") }, "Каталог"),
+        h("button", { className: view === "orders" ? "view-btn view-btn--active" : "view-btn", onClick: () => setView("orders") }, "Заявки"),
+      ),
+    ),
+
+    view === "orders"
+      ? h("main", { className: "orders-wrap" }, h(OrdersView, { orders, loading: loadingOrders }))
+      : h("main", { className: "layout" },
+          h("div", { className: "catalog-col" },
+            h("input", {
+              className: "search", placeholder: "Поиск по названию или бренду…",
+              value: query, onChange: e => setQuery(e.target.value),
+            }),
+            !query && h("div", { className: "tabs" },
+              CATEGORIES.map(c => h("button", {
+                key: c.id,
+                className: activeCat === c.id ? "tab tab--active" : "tab",
+                onClick: () => setActiveCat(c.id),
+              }, c.label)),
+            ),
+            h("div", { className: "grid" },
+              filtered.map(p => h(ProductCard, { key: p.id, p, qty: cart[p.id] || 0, onChange: setQty })),
+              filtered.length === 0 && h("div", { className: "empty-state" }, "Ничего не найдено. Попробуйте другой запрос."),
+            ),
+          ),
+          h("aside", { className: "cart-panel" },
+            submitted
+              ? h("div", { className: "receipt" },
+                  h("div", { className: "receipt-check" }, "✓"),
+                  h("div", { className: "receipt-title" }, "Заявка принята"),
+                  h("div", { className: "receipt-sub" }, "№ ", submitted.id.split(":")[1].split("_")[0]),
+                  h("div", { className: "receipt-total" }, formatSom(submitted.total)),
+                  h("div", { className: "receipt-divider" }),
+                  h("div", { className: "receipt-note" }, "Заявка сохранена в общем списке «Заявки». Отправьте её ", CONFIG.repName, " в WhatsApp — текст уже готов."),
+                  h("a", { className: "btn btn-whatsapp btn-block", href: waLink(orderText(submitted)), target: "_blank", rel: "noopener noreferrer" }, "Отправить ", CONFIG.repName, " в WhatsApp"),
+                  h("div", { className: "link-fallback" },
+                    "Если кнопка не открывает WhatsApp — скопируйте ссылку и вставьте её в браузер:",
+                    h("button", { className: "btn btn-ghost btn-small", onClick: () => copyText(waLink(orderText(submitted))) }, "Скопировать ссылку"),
+                  ),
+                  h("button", { className: "btn btn-ghost btn-block", onClick: () => copyText(orderText(submitted)) }, "Скопировать текст заявки"),
+                  h("button", { className: "btn btn-outline btn-block", onClick: resetOrder }, "Оформить ещё одну заявку"),
+                )
+              : h(React.Fragment, null,
+                  h("div", { className: "slip-header" },
+                    h("span", { className: "slip-header-title" }, "Ваша заявка"),
+                    h("span", { className: "item-count" }, cartItems.length, " поз."),
+                  ),
+                  h("div", { className: "cart-list" },
+                    cartItems.length === 0 && h("div", { className: "cart-empty" }, "Пока пусто — добавьте товары слева."),
+                    cartItems.map(i => h("div", { className: "cart-row", key: i.id },
+                      h("div", { className: "cart-row-text" },
+                        h("div", { className: "cart-row-name" }, i.name),
+                        h("div", { className: "cart-row-meta" }, i.qty, " × ", formatSom(i.price), " · ", i.unit),
+                      ),
+                      h("div", { className: "cart-row-sum" }, formatSom(i.sum)),
+                    )),
+                  ),
+                  h("div", { className: "progress-wrap" },
+                    h("div", { className: "progress-label-row" },
+                      h("span", null, "До минимальной заявки"),
+                      h("span", { className: "progress-fraction" }, formatSom(total), " / ", formatSom(CONFIG.minOrder)),
+                    ),
+                    h("div", { className: "progress-track" },
+                      h("div", { className: "progress-fill" + (total >= CONFIG.minOrder ? " progress-fill--done" : ""), style: { width: `${progress}%` } }),
+                    ),
+                    total < CONFIG.minOrder && h("div", { className: "progress-hint" }, "Добавьте товаров ещё на ", formatSom(remaining)),
+                  ),
+                  h("div", { className: "form-fields" },
+                    h("label", { className: "field-label" }, "ФИО"),
+                    h("input", { className: "field-input", value: fio, onChange: e => setFio(e.target.value), placeholder: "Иванов Иван Иванович" }),
+                    h("label", { className: "field-label" }, "Телефон"),
+                    h("input", { className: "field-input", value: phone, onChange: e => setPhone(e.target.value), placeholder: "+996 700 000 000" }),
+                    h("label", { className: "field-label" }, "Адрес доставки"),
+                    h("input", { className: "field-input", value: address, onChange: e => setAddress(e.target.value), placeholder: "Город, район, улица, дом" }),
+                    h("label", { className: "field-label" }, "Комментарий (необязательно)"),
+                    h("textarea", { className: "field-textarea", value: comment, onChange: e => setComment(e.target.value), placeholder: "Ароматы, оттенки, время доставки…", rows: 2 }),
+                  ),
+                  errors.length > 0 && h("div", { className: "error-box" }, errors.map((e, i) => h("div", { key: i }, "· ", e))),
+                  h("div", { className: "total-row" },
+                    h("span", null, "Итого"),
+                    h("span", { className: "total-sum" }, formatSom(total)),
+                  ),
+                  h("button", { className: "btn btn-submit btn-block", onClick: submitOrder }, "Отправить заявку"),
+                ),
+          ),
+        ),
+
+    h("footer", { className: "site-footer" },
+      h("div", { className: "footer-inner" },
+        h("div", { className: "footer-stamp" }, "ОПТ"),
+        h("div", { className: "footer-text" },
+          h("div", { className: "footer-title" }, "Вопросы и доставка — ", CONFIG.repName),
+          h("a", { className: "footer-phone", href: waLink("Здравствуйте! Хочу уточнить по опту.") }, "+996 500 144 604 · WhatsApp"),
+        ),
+      ),
+    ),
+  );
 }
-const styles = {
-  page: {
-    minHeight: "100vh",
-    background: "#FAF7F2",
-    color: "#242321",
-    fontFamily: "'Segoe UI', system-ui, -apple-system, sans-serif",
-    padding: "24px 20px 60px"
-  },
-  hero: {
-    maxWidth: 1180,
-    margin: "0 auto 20px",
-    borderRadius: 20,
-    overflow: "hidden",
-    boxShadow: "0 16px 40px -22px rgba(20,30,60,0.45)"
-  },
-  heroSplit: {
-    display: "flex",
-    minHeight: 120
-  },
-  heroBioL: {
-    flex: 1.1,
-    background: "linear-gradient(135deg, #1E8F5B, #14603C)",
-    color: "#fff",
-    padding: "22px 26px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center"
-  },
-  heroActive: {
-    flex: 1,
-    background: "linear-gradient(135deg, #24409E, #10225E)",
-    color: "#fff",
-    padding: "22px 26px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center"
-  },
-  heroLogoBioL: {
-    fontFamily: "Georgia, 'Times New Roman', serif",
-    fontWeight: 800,
-    fontSize: 30,
-    letterSpacing: "0.01em"
-  },
-  heroLogoActive: {
-    fontFamily: "Georgia, 'Times New Roman', serif",
-    fontWeight: 800,
-    fontStyle: "italic",
-    fontSize: 30,
-    letterSpacing: "0.01em"
-  },
-  heroTag: {
-    fontSize: 12.5,
-    opacity: 0.85,
-    marginTop: 4,
-    letterSpacing: "0.02em"
-  },
-  heroBar: {
-    background: "#FAF7F2",
-    padding: "14px 24px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexWrap: "wrap",
-    gap: 12,
-    borderTop: "3px solid #C98A2C"
-  },
-  heroSub: {
-    color: "#6b6558",
-    fontSize: 13,
-    marginTop: 2
-  },
-  eyebrow: {
-    fontSize: 12,
-    letterSpacing: "0.14em",
-    textTransform: "uppercase",
-    color: "#C98A2C",
-    fontWeight: 700,
-    marginBottom: 4
-  },
-  h1: {
-    fontFamily: "Georgia, 'Times New Roman', serif",
-    fontSize: 34,
-    margin: 0,
-    color: "#223A5E",
-    letterSpacing: "-0.01em"
-  },
-  sub: {
-    color: "#6b6558",
-    marginTop: 6,
-    fontSize: 14
-  },
-  viewSwitch: {
-    display: "flex",
-    gap: 8
-  },
-  viewBtn: {
-    padding: "8px 16px",
-    borderRadius: 8,
-    border: "1px solid #d8d2c2",
-    background: "#fff",
-    color: "#6b6558",
-    cursor: "pointer",
-    fontSize: 14
-  },
-  viewBtnActive: {
-    padding: "8px 16px",
-    borderRadius: 8,
-    border: "1px solid #14603C",
-    background: "linear-gradient(135deg, #1E8F5B, #14603C)",
-    color: "#fff",
-    cursor: "pointer",
-    fontSize: 14,
-    fontWeight: 600
-  },
-  layout: {
-    maxWidth: 1180,
-    margin: "0 auto",
-    display: "grid",
-    gridTemplateColumns: "1fr 360px",
-    gap: 28,
-    alignItems: "start"
-  },
-  searchRow: {
-    marginBottom: 14
-  },
-  search: {
-    width: "100%",
-    padding: "12px 16px",
-    borderRadius: 10,
-    border: "1px solid #d8d2c2",
-    fontSize: 15,
-    background: "#fff"
-  },
-  tabs: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: 8,
-    marginBottom: 18
-  },
-  tab: {
-    padding: "8px 14px",
-    borderRadius: 999,
-    border: "1px solid #d8d2c2",
-    background: "#fff",
-    color: "#6b6558",
-    cursor: "pointer",
-    fontSize: 13.5
-  },
-  tabActive: {
-    padding: "8px 14px",
-    borderRadius: 999,
-    border: "1px solid #24409E",
-    background: "linear-gradient(135deg, #24409E, #10225E)",
-    color: "#fff",
-    cursor: "pointer",
-    fontSize: 13.5,
-    fontWeight: 600
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-    gap: 12
-  },
-  card: {
-    background: "#fff",
-    border: "1px solid #ece6d6",
-    borderRadius: 12,
-    padding: 14,
-    display: "flex",
-    flexDirection: "column",
-    gap: 8
-  },
-  cardTop: {
-    display: "flex",
-    justifyContent: "space-between",
-    fontSize: 11.5
-  },
-  brandTag: {
-    color: "#fff",
-    fontWeight: 700,
-    letterSpacing: "0.02em",
-    padding: "2px 9px",
-    borderRadius: 999,
-    fontSize: 10.5
-  },
-  unitTag: {
-    color: "#a39d8d"
-  },
-  cardName: {
-    fontSize: 14.5,
-    lineHeight: 1.35,
-    fontWeight: 600,
-    minHeight: 38
-  },
-  cardNote: {
-    fontSize: 12,
-    color: "#C98A2C",
-    fontStyle: "italic"
-  },
-  cardBottom: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginTop: "auto"
-  },
-  price: {
-    fontWeight: 700,
-    color: "#3f7d6d",
-    fontSize: 15
-  },
-  stepper: {
-    display: "flex",
-    alignItems: "center",
-    gap: 4
-  },
-  stepBtn: {
-    width: 26,
-    height: 26,
-    borderRadius: 6,
-    border: "1px solid #d8d2c2",
-    background: "#FAF7F2",
-    cursor: "pointer",
-    fontSize: 16,
-    lineHeight: 1
-  },
-  stepInput: {
-    width: 40,
-    textAlign: "center",
-    border: "1px solid #d8d2c2",
-    borderRadius: 6,
-    padding: "4px 2px",
-    fontSize: 14
-  },
-  empty: {
-    padding: 30,
-    textAlign: "center",
-    color: "#a39d8d",
-    gridColumn: "1/-1"
-  },
-  cartPanel: {
-    position: "sticky",
-    top: 20,
-    background: "#fff",
-    border: "1px solid #ece6d6",
-    borderRadius: 16,
-    padding: 20,
-    boxShadow: "0 12px 30px -18px rgba(34,58,94,0.35)"
-  },
-  receiptHeaderRow: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "baseline",
-    marginBottom: 10
-  },
-  receiptHeaderTitle: {
-    fontFamily: "Georgia, serif",
-    fontSize: 20,
-    color: "#223A5E"
-  },
-  itemCount: {
-    fontSize: 12,
-    color: "#a39d8d"
-  },
-  cartList: {
-    maxHeight: 220,
-    overflowY: "auto",
-    marginBottom: 14
-  },
-  cartEmpty: {
-    color: "#a39d8d",
-    fontSize: 13.5,
-    padding: "10px 0"
-  },
-  cartRow: {
-    display: "flex",
-    justifyContent: "space-between",
-    gap: 10,
-    padding: "8px 0",
-    borderBottom: "1px dashed #ece6d6"
-  },
-  cartRowText: {
-    flex: 1
-  },
-  cartRowName: {
-    fontSize: 13,
-    fontWeight: 600
-  },
-  cartRowMeta: {
-    fontSize: 11.5,
-    color: "#a39d8d"
-  },
-  cartRowSum: {
-    fontSize: 13.5,
-    fontWeight: 700,
-    whiteSpace: "nowrap"
-  },
-  progressWrap: {
-    marginBottom: 16
-  },
-  progressLabelRow: {
-    display: "flex",
-    justifyContent: "space-between",
-    fontSize: 12,
-    color: "#6b6558",
-    marginBottom: 6
-  },
-  progressTrack: {
-    height: 8,
-    borderRadius: 999,
-    background: "#ece6d6",
-    overflow: "hidden"
-  },
-  progressFill: {
-    height: "100%",
-    borderRadius: 999,
-    transition: "width 0.25s ease"
-  },
-  progressHint: {
-    fontSize: 12,
-    color: "#C98A2C",
-    marginTop: 6
-  },
-  formFields: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 4,
-    marginBottom: 12
-  },
-  label: {
-    fontSize: 12,
-    color: "#6b6558",
-    marginTop: 8
-  },
-  input: {
-    padding: "9px 11px",
-    borderRadius: 8,
-    border: "1px solid #d8d2c2",
-    fontSize: 14
-  },
-  textarea: {
-    padding: "9px 11px",
-    borderRadius: 8,
-    border: "1px solid #d8d2c2",
-    fontSize: 14,
-    fontFamily: "inherit",
-    resize: "vertical"
-  },
-  errorBox: {
-    background: "#fdf1ea",
-    border: "1px solid #f0c9a8",
-    color: "#a15a1f",
-    borderRadius: 8,
-    padding: "10px 12px",
-    fontSize: 12.5,
-    marginBottom: 12
-  },
-  totalRow: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "12px 0",
-    borderTop: "2px solid #223A5E",
-    marginBottom: 12,
-    fontSize: 15
-  },
-  totalSum: {
-    fontWeight: 800,
-    fontSize: 20,
-    color: "#223A5E"
-  },
-  submitBtn: {
-    width: "100%",
-    padding: "13px 0",
-    borderRadius: 10,
-    border: "none",
-    background: "#223A5E",
-    color: "#fff",
-    fontSize: 15,
-    fontWeight: 700,
-    cursor: "pointer"
-  },
-  secondaryBtn: {
-    width: "100%",
-    padding: "11px 0",
-    borderRadius: 10,
-    border: "1px solid #d8d2c2",
-    background: "#fff",
-    color: "#223A5E",
-    fontSize: 14,
-    fontWeight: 600,
-    cursor: "pointer",
-    marginTop: 8
-  },
-  copyBtn: {
-    width: "100%",
-    padding: "11px 0",
-    borderRadius: 10,
-    border: "1px solid #3f7d6d",
-    background: "#eef5f2",
-    color: "#3f7d6d",
-    fontSize: 14,
-    fontWeight: 700,
-    cursor: "pointer"
-  },
-  whatsappBtn: {
-    display: "block",
-    width: "100%",
-    padding: "13px 0",
-    borderRadius: 10,
-    border: "none",
-    background: "#25D366",
-    color: "#fff",
-    fontSize: 15,
-    fontWeight: 700,
-    cursor: "pointer",
-    textAlign: "center",
-    textDecoration: "none",
-    marginBottom: 8,
-    boxSizing: "border-box"
-  },
-  linkFallback: {
-    fontSize: 11.5,
-    color: "#a39d8d",
-    marginBottom: 10,
-    textAlign: "left"
-  },
-  linkText: {
-    background: "#FAF7F2",
-    border: "1px solid #ece6d6",
-    borderRadius: 6,
-    padding: "6px 8px",
-    marginTop: 4,
-    marginBottom: 6,
-    fontSize: 11,
-    wordBreak: "break-all",
-    color: "#4a4638"
-  },
-  copyBtnSmall: {
-    padding: "6px 10px",
-    borderRadius: 6,
-    border: "1px solid #3f7d6d",
-    background: "#eef5f2",
-    color: "#3f7d6d",
-    fontSize: 12,
-    fontWeight: 600,
-    cursor: "pointer"
-  },
-  receipt: {
-    textAlign: "center",
-    padding: "10px 4px"
-  },
-  receiptCheck: {
-    width: 44,
-    height: 44,
-    borderRadius: "50%",
-    background: "#3f7d6d",
-    color: "#fff",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: 22,
-    margin: "0 auto 12px"
-  },
-  receiptTitle: {
-    fontFamily: "Georgia, serif",
-    fontSize: 20,
-    color: "#223A5E"
-  },
-  receiptSub: {
-    fontSize: 12,
-    color: "#a39d8d",
-    marginBottom: 10
-  },
-  receiptTotal: {
-    fontSize: 28,
-    fontWeight: 800,
-    color: "#223A5E",
-    marginBottom: 10
-  },
-  receiptDivider: {
-    height: 1,
-    background: "#ece6d6",
-    margin: "10px 0"
-  },
-  ordersWrap: {
-    maxWidth: 800,
-    margin: "0 auto"
-  },
-  ordersNote: {
-    fontSize: 13,
-    color: "#a39d8d",
-    marginBottom: 16,
-    textAlign: "center"
-  },
-  orderCard: {
-    background: "#fff",
-    border: "1px solid #ece6d6",
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 12
-  },
-  orderCardHead: {
-    display: "flex",
-    justifyContent: "space-between",
-    marginBottom: 8
-  },
-  orderItemList: {
-    margin: "8px 0",
-    paddingLeft: 18,
-    fontSize: 13.5,
-    color: "#4a4638"
-  },
-  orderComment: {
-    fontSize: 13,
-    color: "#6b6558",
-    fontStyle: "italic",
-    marginBottom: 8
-  }
-};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(React.createElement(App));
+root.render(h(App));
 </script>
 </body>
 </html>
