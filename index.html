@@ -1325,7 +1325,7 @@ function App() {
   function validate() {
     const errs = [];
     if (cartItems.length === 0) errs.push("Добавьте хотя бы один товар.");
-    if (!fio.trim()) errs.push("Укажите ФИО.");
+    if (!shopName.trim()) errs.push("Укажите название магазина.");
     if (!phone.trim()) errs.push("Укажите номер телефона.");
     if (!address.trim()) errs.push("Укажите адрес доставки.");
     return errs;
@@ -1489,11 +1489,11 @@ function App() {
                     )),
                   ),
                   h("div", { className: "form-fields" },
-                    h("label", { className: "field-label" }, "Название магазина (необязательно)"),
+                    h("label", { className: "field-label" }, "Название магазина"),
                     h("input", { className: "field-input", value: shopName, onChange: e => setShopName(e.target.value), placeholder: "например, «Шаурма №1», Джал" }),
                     h("label", { className: "field-label" }, "ИП по документам (необязательно)"),
                     h("input", { className: "field-input", value: ipName, onChange: e => setIpName(e.target.value), placeholder: "ИП Иванов И. И." }),
-                    h("label", { className: "field-label" }, "ФИО"),
+                    h("label", { className: "field-label" }, "ФИО (необязательно)"),
                     h("input", { className: "field-input", value: fio, onChange: e => setFio(e.target.value), placeholder: "Иванов Иван Иванович" }),
                     h("label", { className: "field-label" }, "Телефон"),
                     h("input", { className: "field-input", value: phone, onChange: e => setPhone(e.target.value), placeholder: "0700 000 000" }),
