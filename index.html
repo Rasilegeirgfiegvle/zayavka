@@ -555,7 +555,6 @@ if (!window.storage) {
    ========================================================================= */
 
 const CONFIG = {
-  minOrder: 2000,
   repPhone: "996500144604", // Айдар — номер для приёма заявок в WhatsApp
   repName: "Айдар",
   city: "Бишкек",
@@ -1296,8 +1295,6 @@ function App() {
   }, [cart]);
 
   const total = cartItems.reduce((s, i) => s + i.sum, 0);
-  const progress = Math.min(100, Math.round((total / CONFIG.minOrder) * 100));
-  const remaining = Math.max(0, CONFIG.minOrder - total);
   const setQty = (id, qty) => setCart(c => ({ ...c, [id]: Math.max(0, qty) }));
 
   async function loadOrders() {
@@ -1327,7 +1324,6 @@ function App() {
 
   function validate() {
     const errs = [];
-    if (total < CONFIG.minOrder) errs.push(`Минимальная сумма заявки — ${formatSom(CONFIG.minOrder)}. Не хватает ${formatSom(remaining)}.`);
     if (cartItems.length === 0) errs.push("Добавьте хотя бы один товар.");
     if (!fio.trim()) errs.push("Укажите ФИО.");
     if (!phone.trim()) errs.push("Укажите номер телефона.");
@@ -1377,7 +1373,6 @@ function App() {
           h("h1", { className: "hero-title" }, "Заявка на опт ", h("em", null, "без звонков")),
           h("p", { className: "hero-sub" }, "Соберите заказ по каталогу BIO'L, Active и Roya — заявка сама сложится в готовое сообщение в WhatsApp."),
           h("div", { className: "hero-chips" },
-            h("span", { className: "chip" }, "Мин. заявка — ", formatSom(CONFIG.minOrder)),
             h("span", { className: "chip" }, "Доставка по ", CONFIG.city),
             h("span", { className: "chip" }, "Оригинал, ", CONFIG.supplierCountry),
           ),
@@ -1493,20 +1488,10 @@ function App() {
                       }, "×"),
                     )),
                   ),
-                  h("div", { className: "progress-wrap" },
-                    h("div", { className: "progress-label-row" },
-                      h("span", null, "До минимальной заявки"),
-                      h("span", { className: "progress-fraction" }, formatSom(total), " / ", formatSom(CONFIG.minOrder)),
-                    ),
-                    h("div", { className: "progress-track" },
-                      h("div", { className: "progress-fill" + (total >= CONFIG.minOrder ? " progress-fill--done" : ""), style: { width: `${progress}%` } }),
-                    ),
-                    total < CONFIG.minOrder && h("div", { className: "progress-hint" }, "Добавьте товаров ещё на ", formatSom(remaining)),
-                  ),
                   h("div", { className: "form-fields" },
-                    h("label", { className: "field-label" }, "Название магазина"),
+                    h("label", { className: "field-label" }, "Название магазина (необязательно)"),
                     h("input", { className: "field-input", value: shopName, onChange: e => setShopName(e.target.value), placeholder: "например, «Шаурма №1», Джал" }),
-                    h("label", { className: "field-label" }, "ИП (по документам)"),
+                    h("label", { className: "field-label" }, "ИП по документам (необязательно)"),
                     h("input", { className: "field-input", value: ipName, onChange: e => setIpName(e.target.value), placeholder: "ИП Иванов И. И." }),
                     h("label", { className: "field-label" }, "ФИО"),
                     h("input", { className: "field-input", value: fio, onChange: e => setFio(e.target.value), placeholder: "Иванов Иван Иванович" }),
