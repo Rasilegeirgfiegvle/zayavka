@@ -567,6 +567,7 @@ function waLink(text) {
 }
 
 const CATEGORIES = [
+  { id: "new", label: "✨ Новинки" },
   { id: "hair", label: "Волосы" },
   { id: "skin", label: "Кожа и лицо" },
   { id: "body", label: "Тело и мыло" },
@@ -592,6 +593,18 @@ let _id = 0;
 const it = (name, brand, unit, price, cat, note, img) => ({ id: `p${_id++}`, name, brand, unit, price, cat, note, img });
 
 const PRODUCTS = [
+// ===== NEW =====
+it("Освежитель воздуха La Terrasse «Fresh Start» (juicy + cooling)", "La Terrasse", "195 мл", 160, "new"),
+it("Освежитель воздуха La Terrasse «Comfort Room» (floral + uplifting)", "La Terrasse", "195 мл", 160, "new"),
+it("Освежитель воздуха La Terrasse «Beautiful Day» (floral + uplifting)", "La Terrasse", "195 мл", 160, "new"),
+it("Освежитель воздуха La Terrasse «Timeless Sweetness» (sweet + energizing)", "La Terrasse", "195 мл", 160, "new"),
+it("Аэрозольный ароматизатор La Terrasse Home Perfume «Buenos Aires»", "La Terrasse", "баллон", 200, "new"),
+it("Аэрозольный ароматизатор La Terrasse Home Perfume «Casablanca»", "La Terrasse", "баллон", 200, "new"),
+it("Аэрозольный ароматизатор La Terrasse Home Perfume «Tokyo»", "La Terrasse", "баллон", 200, "new"),
+it("Аэрозольный ароматизатор La Terrasse Home Perfume «Moscow»", "La Terrasse", "баллон", 200, "new"),
+it("Аэрозольный ароматизатор La Terrasse Home Perfume «Prague»", "La Terrasse", "баллон", 200, "new"),
+it("Диффузор La Terrasse Home Diffuser «Tropical Passion» (warm & lush)", "La Terrasse", "120 мл", 380, "new"),
+it("Диффузор La Terrasse Home Diffuser «Caramel Euphoria» (gourmand & sweet)", "La Terrasse", "120 мл", 380, "new"),
 // ===== HAIR =====
 it("Кондиционер для волос 10 в 1", "BIO'L", "200 мл", 320, "hair"),
 it("Шампунь для волос 10 в 1", "BIO'L", "400 мл", 280, "hair"),
@@ -665,6 +678,7 @@ it("Стиральный порошок автомат Active", "Active", "1,5 �
 it("Стиральный порошок автомат Active", "Active", "3 кг", 350, "laundry"),
 it("Стиральный порошок автомат Active", "Active", "5 кг", 590, "laundry"),
 it("Стиральный порошок автомат Active", "Active", "450 г", 80, "laundry"),
+it("Стиральный порошок автомат Active", "Active", "9 кг", 750, "laundry"),
 it("Стиральный порошок автомат Roya", "Roya", "1,5 кг", 210, "laundry"),
 it("Стиральный порошок автомат Roya", "Roya", "3 кг", 330, "laundry"),
 it("Стиральный порошок автомат Roya", "Roya", "5 кг", 550, "laundry"),
@@ -699,6 +713,9 @@ it("Средство для очистки кухонных поверхност
 it("Средство для очистки стёкол и зеркал", "Active", "500 мл", 125, "toilet"),
 it("Универсальный очиститель", "Active", "700 мл", 150, "home"),
 it("Пятновыводитель", "Active", "500 мл", 160, "home"),
+it("Чистящий крем Cif «Лимон»", "Cif", "665 г", 170, "home"),
+it("Чистящий крем Cif «Аммиак»", "Cif", "665 г", 170, "home"),
+it("Чистящий крем Cif «Весенние цветы»", "Cif", "665 г", 170, "home"),
 it("Чистящее средство для ванных поверхностей", "Active", "700 мл", 150, "toilet"),
 it("Белизна", "Active", "1 л", 110, "toilet"),
 it("Белизна", "Active", "4 л", 375, "toilet"),
@@ -719,6 +736,7 @@ it("Детский шампунь «Львёночек» (банан)", "Active"
 it("Детский шампунь «Обезьянка» (ваниль)", "Active", "250 мл", 125, "hair"),
 it("Детский шампунь «Зайка» (малина)", "Active", "250 мл", 125, "hair"),
 it("Детский шампунь и кондиционер 2в1", "Active", "280 мл", 125, "hair", "Sponge Bob / Spiderman / Minions / Frozen"),
+it("Детский шампунь и кондиционер 2в1 «Щенячий патруль»", "Active", "280 мл", 125, "hair"),
 // ===== FEMININE HYGIENE =====
 it("Прокладки Parmiss Medium (3 капли)", "Parmiss", "10 шт", 95, "fem"),
 it("Прокладки Parmiss Large розовые (5 капель)", "Parmiss", "10 шт", 95, "fem"),
@@ -731,6 +749,7 @@ it("Прокладки Parmiss Роза (6 капель)", "Parmiss", "10 шт",
 it("Зубная паста «С мёдом»", "ActiDent", "100 г", 100, "dental"),
 it("Зубная паста «С углём»", "ActiDent", "100 г", 100, "dental"),
 it("Зубная паста «С солью (розмарин)»", "ActiDent", "100 г", 100, "dental"),
+it("Зубная щётка мягкая Katelai NO.816", "Katelai", "шт.", 35, "dental", "укажите цвет: синяя / зелёная / розовая"),
 ];
 
 const PRODUCT_IMAGES = {
@@ -1300,29 +1319,17 @@ function App() {
     return errs;
   }
 
-  function getGeoLocation() {
-    return new Promise(resolve => {
-      if (!navigator.geolocation) { resolve(null); return; }
-      navigator.geolocation.getCurrentPosition(
-        pos => resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-        () => resolve(null),
-        { enableHighAccuracy: false, timeout: 5000, maximumAge: 300000 },
-      );
-    });
-  }
-
   async function submitOrder() {
     const errs = validate();
     setErrors(errs);
     if (errs.length) return;
-    const geo = await getGeoLocation();
     const order = {
       id: `order:${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
       ts: Date.now(),
       fio: fio.trim(), shopName: shopName.trim(), ipName: ipName.trim(), phone: phone.trim(), address: address.trim(), comment: comment.trim(),
       items: cartItems.map(({ id, name, brand, unit, price, qty, sum, note }) => ({ id, name, brand, unit, price, qty, sum, note })),
       total,
-      lat: geo ? geo.lat : null, lng: geo ? geo.lng : null,
+      lat: null, lng: null,
     };
     setSubmitted(order);
     setCart({}); setFio(""); setShopName(""); setIpName(""); setPhone(""); setAddress(""); setComment("");
@@ -1488,7 +1495,7 @@ function App() {
                     h("label", { className: "field-label" }, "ФИО"),
                     h("input", { className: "field-input", value: fio, onChange: e => setFio(e.target.value), placeholder: "Иванов Иван Иванович" }),
                     h("label", { className: "field-label" }, "Телефон"),
-                    h("input", { className: "field-input", value: phone, onChange: e => setPhone(e.target.value), placeholder: "+996 700 000 000" }),
+                    h("input", { className: "field-input", value: phone, onChange: e => setPhone(e.target.value), placeholder: "0700 000 000" }),
                     h("label", { className: "field-label" }, "Адрес доставки"),
                     h("input", { className: "field-input", value: address, onChange: e => setAddress(e.target.value), placeholder: "Город, район, улица, дом" }),
                     h("label", { className: "field-label" }, "Комментарий (необязательно)"),
